@@ -6,6 +6,7 @@
 
 2. Put the following userdata:
 
+        #!/bin/bash
         curl -fsSL https://get.docker.com | sudo sh
         sudo usermod -aG docker ubuntu
         su ubuntu
@@ -15,3 +16,5 @@
         docker compose up -d
 
 3. Go to grafana: http://YOUR_INSTANCE_IP:3000
+
+4. Login to the minecraft server using http://YOUR_INSTANCE_IP:25565
