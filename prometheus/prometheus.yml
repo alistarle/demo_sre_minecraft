@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 10s
+  scrape_timeout: 5s
+
+alerting:
+  alertmanagers:
+    - scheme: http
+      static_configs:
+        - targets: [ 'alertmanager:9093' ]
+
+rule_files:
+  - alert.yml
+
+scrape_configs:
+  - job_name: minecraft 
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+        - 'minecraft-exporter:8000'
+  - job_name: "node"
+    static_configs:
+    - targets: ["node-exporter:9100"]
