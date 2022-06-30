@@ -21,8 +21,8 @@ services:
       RCON_PORT: 28016
       SERVER_PORT: 25565
       ENABLE_WHITELIST: "true"
-      WHITELIST: "${WHITELISTED_PLAYERS}"
-      OPS: "${OPS_PLAYERS}"
+      WHITELIST: "alistarle"
+      OPS: "alistarle"
       MAX_PLAYERS: 20
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
       SPAWN_ANIMALS: "true"
@@ -115,4 +115,3 @@ volumes:
   prometheus-data:
   grafana-data:
   alertmanager-data:
-

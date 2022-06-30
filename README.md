@@ -8,7 +8,10 @@
 
         curl -fsSL https://get.docker.com | sudo sh
         sudo usermod -aG docker ubuntu
-        git clone https://github.com/alistarle/demo_sre_minecraft .
+        su ubuntu
+        cd /home/ubuntu
+        git clone https://github.com/alistarle/demo_sre_minecraft
+        cd demo_sre_minecraft
         docker compose up -d
 
-3. Go to grafana
+3. Go to grafana: http://YOUR_INSTANCE_IP:3000
