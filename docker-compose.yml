@@ -108,8 +108,8 @@ services:
     ports:
       - "9094:9094"
     restart: unless-stopped
-    environment:
-      DISCORD_WEBHOOK: "https://discord.com/api/webhooks/991802127657746532/yrcqIDFksDac3yFBxlGK11bo-qHJSzc0CxezWlHqV-x84Imew1Iwa-G35rdOYfs7CWqZ"
+    environment: # Change with discord webhook of your server...
+      DISCORD_WEBHOOK: "https://discord.com/api/webhooks/TO_REPLACE"
 volumes:
   prometheus-data:
   grafana-data:
